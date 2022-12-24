@@ -89,6 +89,9 @@ body {
     font-size: 16px;
     color: #1b1c21; }
 
+.expand-btn--rotate::before {
+  transform: rotate(180deg); }
+
 .expand-area.expand-btn-active {
   overflow: visible;
   height: auto;
@@ -350,6 +353,9 @@ body {
     @media (min-width: 1046px) {
       .about-us__img {
         border-radius: 7px; } }
+  @media (min-width: 1046px) {
+    .about-us .about-us__expand-btn {
+      display: none; } }
 
 .slider {
   width: 100%;
