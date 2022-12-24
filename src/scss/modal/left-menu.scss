@@ -1,18 +1,13 @@
 .left-menu {
-   transition: all linear 0.25s;
-   opacity: 1;
    font-family: 'TT Lakes', sans-serif;
    font-weight: 500;
    color: $black;
    font-size: 16px;
    line-height: 24px;
    z-index: 50;
-
    box-sizing: border-box;
    width: 320px;
-
    background: $white;
-
    padding: 18px 16px 32px;
    position: fixed;
    top: 0;
@@ -49,7 +44,6 @@
       }
    }
 
-   /* Верхние кнопки*/
    &__header {
       display: flex;
       align-items: center;
@@ -62,7 +56,6 @@
       display: flex;
       align-items: center;
 
-      /*Отступы лого*/
       &:nth-child(2) {
          margin-left: 17px;
          margin-right: 93px;
@@ -148,13 +141,25 @@
       display: flex;
       flex-direction: column;
       gap: 24px;
-      @media (min-height: 900px) {
-         gap: 32px;
-      }
    }
 
    &__link {
       display: inline-block;
       color: $black;
+
+     &:active::before,
+     &:hover::before {
+       content: '';
+       position: relative;
+       left: -16px;
+       height: 40px;
+       border: 2px solid $light-sky;
+       border-radius: 0 10px 10px 0;
+       margin-right: -4px;
+     }
+     &:active,
+     &:hover {
+       color: $muted;
+     }
    }
 }

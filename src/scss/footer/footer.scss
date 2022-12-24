@@ -1,16 +1,8 @@
-@media (max-width: $phone) {
-}
-@media (min-width: $tablet) and (max-width: $tablet-max) {
-}
-@media (min-width: $desktop) {
-}
-
 .footer {
    display: grid;
    grid-template-columns: repeat(3, 1fr);
    color: $muted;
    gap: 16px;
-
    padding: 16px;
    border-top: 1px solid $sky-border;
 

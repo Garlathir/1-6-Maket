@@ -24,16 +24,11 @@
 
    &__card {
       width: auto;
-      transition: all linear 25s;
       margin-left: 16px;
       border-radius: 6px;
       @media (min-width: $tablet) {
          margin: 0;
       }
-
-         & .circle__link {
-            transform: scale(0.95) translate(1px, 0);
-         }
 
       &:last-child {
          margin-right: 16px;
