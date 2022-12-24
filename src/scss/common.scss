@@ -30,17 +30,12 @@ body {
    display: flex;
    align-items: center;
    justify-content: center;
-
    background: $pink;
    border-radius: 50%;
    width: 40px;
    height: 40px;
    border: none;
-   transition: all linear.25s;
 
-   &:hover {
-      opacity: 0.75;
-   }
 }
 
 .circle__link {
@@ -61,7 +56,6 @@ body {
    &::before {
       content: url('../assets/img/expand.svg');
       height: 24px;
-      transition: all linear.25s;
    }
 
    &__text {
@@ -72,30 +66,18 @@ body {
    }
 }
 
-.expand-btn--rotate::before {
-   transform: rotate(-180deg);
-   transition: all linear.25s;
-}
-
 .expand-area.expand-btn-active {
    overflow: visible;
    height: auto;
    max-height: 600px;
-   transition: max-height 0.5s cubic-bezier(1, 0.15, 0, 1.22);
 }
 
 .submit-btn {
    height: 32px;
    padding: 4px 12px;
-
    background: $pink;
    border: 0;
    border-radius: 16px;
-   transition: all linear.25s;
-
-   &:hover {
-      opacity: 0.75;
-   }
 
    span {
       font-size: 12px;

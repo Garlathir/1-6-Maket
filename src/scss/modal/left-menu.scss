@@ -117,7 +117,7 @@
    &__contact-link {
       color: $black;
    }
-=
+
    &__lang {
       display: flex;
       gap: 7px;
@@ -156,25 +156,5 @@
    &__link {
       display: inline-block;
       color: $black;
-      transition: all linear.5s;
-      &:active::before,
-      &:hover::before {
-         content: '';
-         position: relative;
-         left: -16px;
-         height: 32px;
-         border: 2px solid $light-sky;
-         border-radius: 0 10px 10px 0;
-         margin-right: -4px;
-         @media (min-height: 900px) {
-            content: '';
-            position: relative;
-            left: -24px;
-         }
-      }
-      &:active,
-      &:hover {
-         color: $muted;
-      }
    }
 }
