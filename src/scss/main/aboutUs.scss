@@ -80,4 +80,10 @@
          border-radius: 7px;
       }
    }
+
+  .about-us__expand-btn {
+    @media (min-width: $desktop) {
+      display: none;
+    }
+  }
 }
